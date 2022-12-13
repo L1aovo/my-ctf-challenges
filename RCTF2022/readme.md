@@ -59,7 +59,7 @@ The check for path traversal and existing file is an and. That means we can over
 
 To disable directory traversal for "..", I added this logic. This is a logic error, I should replace and with or.  qwq
 
-A small trick for os.path.join
+A small trick for os.path.join. When your filename starts with `/`, it will ignore the first parameter
 
 ```python
 >>> import os
